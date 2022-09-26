@@ -21,3 +21,30 @@
     $('h4, h6')
     $('div h4')
 ```
+
+/*
+ * Callback
+ * - entendendo ações que começam ao término de outra
+ *  
+
+$('.exemplo:nth(2)')
+.hide(2000, function(){
+    // este é o callback
+    console.log($(this).find('h4').text() + ' esgotado')
+})
+.show(2000, function(){
+    console.log($(this).find('h4').text() + ' em estoque')
+})*/
+
+
+/*
+ * Animações
+*/
+const duracao = 1000 // 1 segundo
+$('.exemplo:nth(1)')
+//.hide(duracao)
+//.show(duracao)
+.fadeOut(duracao)
+.fadeIn(duracao)
+//.toggle(duracao)
+//.toggle(duracao)
